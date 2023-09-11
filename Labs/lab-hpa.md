@@ -111,6 +111,10 @@ Salvar y recargar.
 
         while sleep 1; do curl -s <your_app_route>/info; done
 
+    En PowerShell:
+
+        while ($true) { Invoke-RestMethod -Uri "<your_app_route>/info"; Start-Sleep -Seconds 1 }
+
  12.2. Observar como a los pocos segundos va aumentando la carga de CPU del pod donde corre la aplicación `Workload > Pod > Overview`.
 
  12.3. Comprobar también como al pasar unos 5 min aproximadamente aumentan el numero de pods que tiene el deployment y pasa de 1 a 5:
