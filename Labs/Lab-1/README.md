@@ -136,7 +136,8 @@ Events:
 6.1. Acceder a uno de los masters del cluster por ssh (ejemplo):
 
 ```shell
-$ ssh core@master1dev.ocpdevmad01.tic1.intranet
+$ oc get nodes
+$ oc debug node/<master>
 ```
 
 6.2. Comprbar el acceso con el curl (La IP a la que accede el curl es la IP del pod punto 4 ):
