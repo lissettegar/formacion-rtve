@@ -210,3 +210,9 @@ nginx   nginx-rgh-formacion.apps.cp4d.ocp.local          nginx      80          
 ![alt Route][imagen3]
 
 [imagen3]: images/routes3.png
+
+### 12. Borrar el proyecto
+
+```shell
+$ oc delete project ${GUID}-formacion
+```
