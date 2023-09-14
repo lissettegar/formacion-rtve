@@ -60,7 +60,7 @@ Requisitos:
 
   1.9. Comprobar nuevamenete las variables de entorno definidas dentro del pod:
 
-    $ oc <pod-nginx> -- printenv |grep APP
+    $ oc exec <pod-nginx> -- printenv |grep APP
     APP_VAR_1=Value1
     APP_VAR_2=Value2
     
