@@ -21,6 +21,8 @@ Requisitos:
 
     $ oc get pods
     $ oc describe pod <nombre del pod>
+    $ oc adm policy add-scc-to-user anyuid system:serviceaccount:<proyecto>:default
+    $ oc delete pod <nombre del pod>
 
   1.3. Crear un servicio y route para la app:
 
