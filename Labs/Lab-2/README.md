@@ -130,7 +130,7 @@ Requisitos:
 
   2.10. Añadir el ConfigMap a la configuracion del deployment:
 
-    $ oc set volume deploy/nginx --add --overwrite --name=config-volume -m /data/ -t configmap --configmap-name=nginx-config-file
+    $ oc set volume deploy/my-nginx --add --overwrite --name=config-volume -m /data/ -t configmap --configmap-name=nginx-config-file
 
   2.11. Encontrar el pod que este Running:
 
