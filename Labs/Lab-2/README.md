@@ -203,6 +203,8 @@ Requisitos:
         storageClassName: ibm-spectrum-scale-csi-consistency-group-delete
         volumeMode: Filesystem
 
+        $ oc create -f pvc-dinamic.yaml
+
   4.2. Comprobar que se ha creado el PVC
 
        $ oc get pvc -n $GUID-env
