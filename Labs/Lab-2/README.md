@@ -188,20 +188,20 @@ Requisitos:
 
   4.1. Crear un PVC: 
 
-       $ vi pvc-dinamic.yaml
-      kind: PersistentVolumeClaim
-      apiVersion: v1
-      metadata:
-        name: test-claim
-        namespace: lgp-formacion
-      spec:
-        accessModes:
-        - ReadWriteMany
-        resources:
-          requests:
-            storage: 1Mi
-        storageClassName: ibm-spectrum-scale-csi-consistency-group-delete
-        volumeMode: Filesystem
+     $ vi pvc-dinamic.yaml
+     kind: PersistentVolumeClaim
+     apiVersion: v1
+     metadata:
+       name: test-claim
+       namespace: lgp-formacion
+     spec:
+       accessModes:
+       - ReadWriteMany
+       resources:
+         requests:
+           storage: 1Mi
+       storageClassName: ibm-spectrum-scale-csi-consistency-group-delete
+       volumeMode: Filesystem
 
         $ oc create -f pvc-dinamic.yaml
 
