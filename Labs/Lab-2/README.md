@@ -15,14 +15,12 @@ Requisitos:
   1.1. Crear el proyecto y desplegar una aplicacion desde un repositorio de Git:
 
     $ oc new-project $GUID-env
-    $ oc create deployment my-nginx --image=nginx --port=80
+    $ oc create deployment my-nginx --image=quay.io/jitesoft/nginx --port=80
 
   1.2. Ver los eventos:
 
     $ oc get pods
     $ oc describe pod <nombre del pod>
-    $ oc adm policy add-scc-to-user anyuid system:serviceaccount:<proyecto>:default
-    $ oc delete pod <nombre del pod>
 
   1.3. Crear un servicio y route para la app:
 
