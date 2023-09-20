@@ -2,8 +2,15 @@
 
 ## Visualizando Logs
 
-1. Desplegar la aplicacion printenv del lab-2. Seguir los pasos del Lab-2 hasta el punto 1.4.
-2. Comprobar los logs de la aplicacion por linea de comandos:
+1. Crear un nuevo proyecto:
+       $ oc new-project <nombre-proyecto>
+2. Desplegar aplicación desde la consola de Openshift vista Developer:
+   
+![alt Despliegue][imagen10]
+
+[imagen10]: images/Despliegue.png
+4. 
+5. Comprobar los logs de la aplicacion por linea de comandos:
 
         $ oc logs printenv-1-8px6q
         git version 1.8.3.1
@@ -24,7 +31,7 @@
 
         Node Backend is listening at 8080
 
-3. Comprobar los eventos del proyecto:
+6. Comprobar los eventos del proyecto:
 
         $ oc get events
         LAST SEEN   TYPE     REASON              OBJECT                             MESSAGE
